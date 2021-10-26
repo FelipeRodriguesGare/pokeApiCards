@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <form class="attributeSelector addPokemon">
+            <label for="pokemonName">Nome do Pokemon</label>
+            <input name="pokemonName" placeholder="Ex: mew" type="text">
+            <button type="submit" class="winner addPoke">ADICIONAR</button>
+        </form>
+        <form class="attributeSelector">
+            <select id="attributes">
+                <option value="attack">Attack</option>
+                <option value="life">Life</option>
+                <option value="defense">Defense</option>
+                <option value="speed">Speed</option>
+            </select>
+            <button type="submit" class="winner contest">GANHADOR</button>
+            <button type="submit" class="winner reset">RESET</button>
+        </form>
+        <div class="cards"></div>
+    </div>
+    <div id="demo"></div>
+    <script src="index.js" type="module"></script>
+</body>
+</html>
